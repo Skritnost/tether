@@ -1,0 +1,79 @@
+.widget {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.widget_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.widget_header {
+    padding: 10px;
+    user-select: none;
+    background-color: #555;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin-right: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    align-self: center;
+}
+
+.buttons button {
+    cursor: pointer;
+}
+
+.arrow_right {
+    transform: rotate(-45deg);
+}
+
+
+.down {
+    transform: rotate(90deg);
+}
+
+.content {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content.collapsed {
+    display: none;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: right;
+}
+
+.rightAlign {
+    text-align: right;
+}
